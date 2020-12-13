@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+}
+.left-header{
+    margin-top: -30px;
+}
+
+.left-header h3{
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.logout-btn{
+    padding: 5px;
+    background: #19b3d3;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout-btn:hover{
+    background: #0d9dbb;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar{
+    background: #2f323a;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.3s;
+    transition-property: left;
+}
+
+
+.sidebar .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color: #cccccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    border-bottom: 1px solid #cccccc;
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    background: #19b3d3;
+}
+.sidebar i{
+    padding-right: 50px;
+}
+
+label #sidebar-btn{
+    color: #ffffff;
+    position: fixed;
+    margin-top: -15px;
+    left: 300px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background;
+}
+label #sidebar-btn:hover{
+    background: #19b3d3;
+}
+
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+    transition: 0.5s;
+}
+
+#check:checked ~ .content{
+    margin-left: -60px;
+    transition: 0.8s;
+}
+
+.content{
+    padding-left: 250px;
+    position: absolute;
+    z-index: -1;
+}
+
+#check{
+    display: none;
+}
+
+  /* dropdown button */
+.dropdown-btn {
+    padding-left: 40px;
+    color: #ffffff;
+    border: none;
+    background: none;
+    line-height: 60px;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s;
+    border-bottom: 1px solid #cccccc;
+}
+.dropdown-btn:hover{
+    background: #19b3d3;
+}
+
+  
+.active {
+    background-color: #19b3d3;
+    color: white;
+}
+
+.dropdown-container{
+    display: none;
+    border-bottom: none;
+}
+.fa-caret-down {
+    margin-left: 110px;
+    font-size: 20px;
+}
+
+/* form */
+.drink-form{
+    padding-top: 70px;
+}
+
+
+
+
+
